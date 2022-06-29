@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/mysql.png</file>
+    </qresource>
+</RCC>

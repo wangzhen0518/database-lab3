@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>银行服务系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icons/images/mysql.png</normaloff>:/icons/images/mysql.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>200</width>
+    <height>50</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="5" column="2">
+     <widget class="QPushButton" name="btnAcc">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>账户管理</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="btnStatistic">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>业务统计</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="btnCus">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>客户管理</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="btnLogin">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="btnLogout">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>登出</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="btnLoan">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>贷款管理</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>银行服务系统</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="2">
+     <widget class="QPushButton" name="btnClose">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>663</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="log">
+    <property name="title">
+     <string>登录/登出</string>
+    </property>
+    <addaction name="acLogin"/>
+    <addaction name="acLogout"/>
+   </widget>
+   <widget class="QMenu" name="methods">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="acCustomer"/>
+    <addaction name="acAccount"/>
+    <addaction name="acLoan"/>
+    <addaction name="acStatistic"/>
+   </widget>
+   <addaction name="log"/>
+   <addaction name="methods"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="acLogin">
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </action>
+  <action name="acLogout">
+   <property name="text">
+    <string>登出</string>
+   </property>
+  </action>
+  <action name="acCustomer">
+   <property name="text">
+    <string>客户管理</string>
+   </property>
+  </action>
+  <action name="acAccount">
+   <property name="text">
+    <string>账户管理</string>
+   </property>
+  </action>
+  <action name="acLoan">
+   <property name="text">
+    <string>贷款管理</string>
+   </property>
+  </action>
+  <action name="acStatistic">
+   <property name="text">
+    <string>业务统计</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
