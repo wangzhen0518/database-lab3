@@ -1,0 +1,5 @@
+MySQL-python==1.2.5
+PyMySQL==1.0.2
+PyQt5==5.15.7
+ui==0.1.4
+auto_mix_prep==0.2.0
